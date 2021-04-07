@@ -4,12 +4,14 @@ require 'rails_helper'
 RSpec.describe User, type: :model do 
 
     subject(:user) do
-    FactoryBot.build(:user,
-      username: "jonathan",
-      password: "goodpassword")
+        FactoryBot.create(:user,
+        username: "jonathan",
+        password: "goodpassword")
     end
 
+
     it "creates a password digest when a password is given" do 
+        # user1 = User.create(username: "sebastian", password: "helloworld")
         expect(user.password_digest).to_not be_nil
     end 
 

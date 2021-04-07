@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    username { |n| Faker::CryptoCoin}
+    username { |n| Faker::FunnyName}
     password { "password"}
   end
 end
