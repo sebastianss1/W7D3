@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
     subject(:user) do
         FactoryBot.create(:user,
         username: "jonathan",
-        password: "goodpassword")
+        password: "goodpassword")  
     end
 
 
